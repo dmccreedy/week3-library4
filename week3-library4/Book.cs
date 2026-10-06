@@ -15,7 +15,17 @@ namespace week3_library4
         public string Title
         {
             get { return _title; }
-            set { _title = value; }
+            set
+            {
+                if (!value.Any(char.IsDigit))
+                {
+                    _title = value;
+                }
+                else
+                {
+                    Console.WriteLine("Title cannot contain numbers.");
+                }
+            }
         }
 
         public string Author
@@ -27,7 +37,9 @@ namespace week3_library4
         public int ISBN
         {
             get { return _isbn; }
-            set { _isbn = value; }
+            set
+            { _isbn = value; 
+            }
         }
 
         //Constructor
