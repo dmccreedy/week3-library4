@@ -2,7 +2,7 @@
 
 Book book = new Book();
 
-//This is info for the book class
+//This is info for the book class. 
 
 book.Title = "C# for beginners";
 book.Author ="Bill Gates";
