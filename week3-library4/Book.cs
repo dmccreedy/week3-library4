@@ -6,11 +6,23 @@ namespace week3_library4
 {
     public class Book
     {
+
+
+
         public string Title;
         public string Author;
 
         public int ISBN;
 
+        // Parameterless constructor
+        public Book(string bookTitle, string bookAuthor, int bookISBN)
+        {
+            Title = bookTitle;
+            Author = bookAuthor;
+            ISBN = bookISBN;
+        }
+
+       
         public void DisplayInfo()
         {
             Console.WriteLine($"Title: {Title}");
